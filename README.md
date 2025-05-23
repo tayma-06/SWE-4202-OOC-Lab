@@ -15,6 +15,3 @@ This repository contains lab assignments, practice exercises, and project files 
 - Exception Handling
 - File I/O
 - GUI Programming (optional/advanced labs)
-
-## 📁 Repository Structure
-
