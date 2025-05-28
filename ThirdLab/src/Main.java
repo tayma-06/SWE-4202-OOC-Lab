@@ -12,5 +12,6 @@ public class Main {
         System.out.println();
         Singer si1 = new Singer("Anika", 23, "Dhaka", "Guitar", "Imaginary Band", Role.LEAD_VOCALIST);
         si1.display();
+        si1.learn();
     }
 }
