@@ -25,7 +25,7 @@ public class Singer extends Friends {
     }
 
     public Role getRole() {
-        return Role;
+        return role;
     }
 
     public void setProfession(String profession) {
