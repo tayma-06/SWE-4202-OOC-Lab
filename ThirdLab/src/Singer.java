@@ -2,14 +2,14 @@ public class Singer extends Friends {
     private String profession;
     private String instrument;
     private String band;
-    private String position;
+    private Role role;
 
-    public Singer(String name, int age, String address, String instrument, String band, String position) {
+    public Singer(String name, int age, String address, String instrument, String band, Role role) {
         super(name, age, address);
         this.profession = "Singer";
         this.instrument = instrument;
         this.band = band;
-        this.position = position;
+        this.role = role;
     }
 
     public String getProfession() {
@@ -24,8 +24,8 @@ public class Singer extends Friends {
         return band;
     }
 
-    public String getPosition() {
-        return position;
+    public Role getRole() {
+        return Role;
     }
 
     public void setProfession(String profession) {
@@ -36,8 +36,8 @@ public class Singer extends Friends {
         this.instrument = instrument;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     @Override
@@ -51,6 +51,6 @@ public class Singer extends Friends {
         System.out.println("Profession : " + getProfession());
         System.out.println("Likes to play as an Instrument : " + getInstrument());
         System.out.println("Band name : " + getBand());
-        System.out.println("Position : " + getPosition());
+        System.out.println("Position : " + getRole());
     }
 }

@@ -10,7 +10,7 @@ public class Main {
         d1.display();
         d1.learn();
         System.out.println();
-        Singer si1 = new Singer("Anika", 23, "Dhaka", "Guitar", "Imaginary Band", "Lead Vocalist");
+        Singer si1 = new Singer("Anika", 23, "Dhaka", "Guitar", "Imaginary Band", Role.LEAD_VOCALIST);
         si1.display();
     }
 }
