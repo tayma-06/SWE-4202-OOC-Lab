@@ -1,18 +1,37 @@
-## Getting Started
+# 🧑‍💻 Friends and Their Activities
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Raiyan, Tahsin, Anika, Salman are friends. They have the same age.  
+They live in Dhaka. As a person, they can:
 
-## Folder Structure
+- Eat  
+- Sleep  
+- Walk  
+- Learn  
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🎯 Individual Profiles
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 👨‍💻 Raiyan
+Raiyan is a good programmer.  
+He works for a company as a junior software engineer.  
+There, he performs his coding task.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### 💃 Tahsin
+Tahsin is a good dancer.  
+She dances in different festivals as a member of the **Elite Group** of **Choturongo Shilpokola Academy**.
 
-## Dependency Management
+### 🎤 Anika
+Anika likes to sing and play guitar.  
+She is a member of the **Imaginary** band where she performs as the **lead vocalist**.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## ✅ Instructions
+
+- Use an appropriate name to define a class.  
+- Identify the properties and methods of each class and give a suitable name.  
+- Use constructor for classes  
+- Apply **OOC** like **encapsulation**, **inheritance** if necessary  
+- Write a separate class to create objects of other classes and call their properties/methods.  
+  *(Write a simple statement within the method body to distinguish their activity.)*
