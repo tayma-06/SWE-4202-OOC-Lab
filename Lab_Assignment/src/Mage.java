@@ -1,5 +1,5 @@
 // Protagonist Character Class
-//  Mages,scholars of the arcane who harness elemental and spiritual energies
+// Mages,scholars of the arcane who harness elemental and spiritual energies
 // They have the lowest health, comparatively, but have the highest damage potential
 // They can cast spells on the enemy, which will unleash the highest damage to any enemy
 // Health: 80
