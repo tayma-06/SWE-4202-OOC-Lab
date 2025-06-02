@@ -1,0 +1,11 @@
+6/2/2025 : 
+-Created a public parent class named "GameCharacter.java"
+-Added the attributes mentioned in private access modifier type
+-Added Constructor (public)
+-Added getters and setters methods (public)
+-Created 3 protagonist classes (public subclasses of the GameCharacter class):
+ Mage.java, Archer.java, Warrior.java 
+-Added Constructor (using super public)
+-Created 3 antagonist classes (public subclasses of the GameCharacter class):
+ DarkOverload.java, RegionalWarlor.java, CorruptedMortal.java
+-Added Constructor (using super public)
