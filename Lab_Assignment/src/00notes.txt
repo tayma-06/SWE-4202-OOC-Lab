@@ -1,6 +1,6 @@
 6/2/2025 : 
 -Created a parent class named "GameCharacter.java"
--Added the attributes mentioned in private access modifier type
+-Added the attributes mentioned as private access modifier type
 -Added Constructor
 -Added getters and setters methods
 -Created 3 protagonist classes (subclasses of the GameCharacter class):
