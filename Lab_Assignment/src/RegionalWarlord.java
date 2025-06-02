@@ -1,5 +1,5 @@
 // Antagonist Character Class
-//  These powerful leaders each control a part of Aetherfall
+// These powerful leaders each control a part of Aetherfall
 // Their magic is strong, their goals are twisted, and they rule over regions soaked in corruption.
 // They canstopopponentattacks for a certain time.
 // Health: 130
