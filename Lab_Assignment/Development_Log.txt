@@ -7,5 +7,5 @@
  Mage.java, Archer.java, Warrior.java 
 -Added Constructor (using super public)
 -Created 3 antagonist classes (public subclasses of the GameCharacter class):
- DarkOverload.java, RegionalWarlor.java, CorruptedMortal.java
+ DarkOverlord.java, RegionalWarlord.java, CorruptedMortal.java
 -Added Constructor (using super public)
