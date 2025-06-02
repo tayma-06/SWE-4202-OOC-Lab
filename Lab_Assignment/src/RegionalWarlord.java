@@ -8,8 +8,8 @@
 // Standard Attack power cost: 10
 // Special Move: toxicAura()- PowerCost(Special): 35 - Special Effect: Deals 30 health damage and next 20 seconds the user cannot attack
 
-public class RegionalWardLords extends GameCharacter {
-    public RegionalWardLords() {
-        super(130, 110, 20, 10);
+public class RegionalWarlord extends GameCharacter {
+    public RegionalWarlord() {
+        super("Regional WarLord", 130, 110, 20, 10);
     }
 }

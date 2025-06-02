@@ -10,7 +10,7 @@
 // Special Move: multiShot()– PowerCost(Special): 50 – Special Effect: Deals 60 health damage to opponent
 
 public class Archer extends GameCharacter {
-    public Archer() {
-        super(100, 100, 15, 8);
+    public Archer(String name) {
+        super(name, 100, 100, 15, 8);
     }
 }

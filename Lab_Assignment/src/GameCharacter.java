@@ -2,16 +2,22 @@
 
 public class GameCharacter {
     // The attributes of all the characters are same
+    private String name;
     private int health;
     private int power;
     private int standardAttackDamage;
     private int standardAttackPowerCost;
 
-    public GameCharacter(int health, int power, int standardAttackDamage, int standardAttackPowerCost) {
+    public GameCharacter(String name, int health, int power, int standardAttackDamage, int standardAttackPowerCost) {
+        this.name = name;
         this.health = health;
         this.power = power;
         this.standardAttackDamage = standardAttackDamage;
         this.standardAttackPowerCost = standardAttackPowerCost;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getHealth() {
@@ -44,6 +50,10 @@ public class GameCharacter {
 
     public void setStandardAttackPowerCost(int standardAttackPowerCost) {
         this.standardAttackPowerCost = standardAttackPowerCost;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
 }

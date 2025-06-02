@@ -8,8 +8,8 @@
 // Standard Attack power cost: 9
 // Special Move: curse()- PowerCost(Special): 20 - Special Effect: Deals 25 health damage
 
-public class CorrupterMortals extends GameCharacter {
-    public CorrupterMortals() {
-        super(90, 90, 18, 9);
+public class CorrupterMortal extends GameCharacter {
+    public CorrupterMortal() {
+        super("Corrupted Mortal", 90, 90, 18, 9);
     }
 }

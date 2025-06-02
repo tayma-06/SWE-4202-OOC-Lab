@@ -10,6 +10,6 @@
 
 public class DarkOverload extends GameCharacter {
     public DarkOverload() {
-        super(200, 150, 25, 17);
+        super("Dark Overload", 200, 150, 25, 17);
     }
 }

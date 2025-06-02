@@ -8,8 +8,8 @@
 // Standard Attack power cost: 5
 // Special Move: mightyStrike()- PowerCost(Special): 35 - Special Effect: Deals 35 health damage to opponent
 
-public class Warriors extends GameCharacter {
-    public Warriors() {
-        super(120, 100, 12, 5);
+public class Warrior extends GameCharacter {
+    public Warrior(String name) {
+        super(name, 120, 100, 12, 5);
     }
 }
