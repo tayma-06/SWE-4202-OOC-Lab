@@ -74,5 +74,6 @@ public class Main {
         }
         startGame(player, enemy);
         displayStats(player, enemy);
+        scanner.close();
     }
 }
