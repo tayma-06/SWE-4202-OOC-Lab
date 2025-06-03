@@ -61,6 +61,8 @@ public class Main {
             case 3:
                 enemy = new CorruptedMortal();
                 break;
+            default:
+                System.out.println("Invalid Input");
         }
         startGame(player, enemy);
     }
