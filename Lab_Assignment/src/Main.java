@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Choose a character: 1. Mage 2. Archer 3. Warrior");
         System.out.print("> ");
         choice = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); // to consume nextLine
         switch (choice) {
             case 1:
                 System.out.println("You have chosen Mage");
