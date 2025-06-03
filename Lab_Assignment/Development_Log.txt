@@ -1,24 +1,24 @@
-6/2/2025 : 
--Created a public parent class named "GameCharacter.java"
--Added the attributes mentioned in private access modifier type
--Added Constructor (public)
--Added getters and setters methods (public)
+6/2/2025
+-Created a public parent class named GameCharacter.java
+-Added the attributes mentioned using the private access modifier
+-Added a public constructor
+-Added public getter and setter methods
 -Created 3 protagonist classes (public subclasses of the GameCharacter class):
- Mage.java, Archer.java, Warrior.java 
--Added Constructor (using super public)
+Mage.java, Archer.java, Warrior.java
+-Added constructor using super(...) in each subclass
 -Created 3 antagonist classes (public subclasses of the GameCharacter class):
- DarkOverlord.java, RegionalWarlord.java, CorruptedMortal.java
--Added Constructor (using super public)
+DarkOverlord.java, RegionalWarlord.java, CorruptedMortal.java
+-Added constructor using super(...) in each subclass
 
-6/3/2025 : 
+6/3/2025
 -Created a public main class named Main.java
--Used java.util.Scanner package 
--Created an object of Scanner 
--Created two objects of player and enemy from GameCharacter
--Used switch cases for taking choices for the player's input
+-Used java.util.Scanner package
+-Created an object of Scanner
+-Created two objects: one for player and one for enemy from GameCharacter
+-Used switch cases for taking choices from player's input
 -Created another switch case for taking input choice for villain
--While formatting learnt about objectName.getClass().getSimpleName() 
-by which we can get the name of the class the object belongs to
--Created a method for starting the game
--Found out that we cannot access a non-static method from a static method so made the
-startGame() method into a static one
+-While formatting, learned about objectName.getClass().getSimpleName()
+which returns the name of the class the object belongs to
+-Created a method named startGame() to begin the combat
+-Found out that we cannot access a non-static method from a static context,
+so made the startGame() method static
