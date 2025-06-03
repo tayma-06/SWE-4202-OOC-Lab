@@ -9,3 +9,16 @@
 -Created 3 antagonist classes (public subclasses of the GameCharacter class):
  DarkOverlord.java, RegionalWarlord.java, CorruptedMortal.java
 -Added Constructor (using super public)
+
+6/3/2025 : 
+-Created a public main class named Main.java
+-Used java.util.Scanner package 
+-Created an object of Scanner 
+-Created two objects of player and enemy from GameCharacter
+-Used switch cases for taking choices for the player's input
+-Created another switch case for taking input choice for villain
+-While formatting learnt about objectName.getClass().getSimpleName() 
+by which we can get the name of the class the object belongs to
+-Created a method for starting the game
+-Found out that we cannot access a non-static method from a static method so made the
+startGame() method into a static one
