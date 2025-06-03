@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void startGame(GameCharacter player, GameCharacter enemy) {
+        System.out.println(
+                player.getName() + " the " + player.getClass().getSimpleName() + " enters the world of Aetherfall!");
+        System.out.println(enemy.getName() + " rises to start spread chaos!");
+        System.out.println("Battle Start!");
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        GameCharacter player = null;
+        GameCharacter enemy = null;
+        String playerName;
+        int choice;
+        String playerCharType = "";
+        System.out.println("Choose a character: 1. Mage 2. Archer 3. Warrior");
+        System.out.print("> ");
+        choice = scanner.nextInt();
+        scanner.nextLine();
+        switch (choice) {
+            case 1:
+                System.out.println("You have chosen Mage");
+                System.out.println("Enter your mage name");
+                System.out.print("> ");
+                playerName = scanner.nextLine();
+                player = new Mage(playerName);
+                break;
+            case 2:
+                System.out.println("You have chosen Archer");
+                System.out.println("Enter your archer name");
+                System.out.print("> ");
+                playerName = scanner.nextLine();
+                player = new Archer(playerName);
+                break;
+            case 3:
+                System.out.println("You have chosen Warrior");
+                System.out.println("Enter your warrior name");
+                System.out.print("> ");
+                playerName = scanner.nextLine();
+                player = new Warrior(playerName);
+                break;
+            default:
+                System.out.println("Invalid Input");
+        }
+        System.out.println("Choose a villain to fight against: ");
+        System.out.println("1. Dark Overlord");
+        System.out.println("2. Regional Warlord");
+        System.out.println("3. Corrupted Mortal");
+        System.out.print("> ");
+        choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                enemy = new DarkOverlord();
+                break;
+            case 2:
+                enemy = new RegionalWarlord();
+                break;
+            case 3:
+                enemy = new CorruptedMortal();
+                break;
+        }
+        startGame(player, enemy);
+    }
+}

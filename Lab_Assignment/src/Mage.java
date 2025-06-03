@@ -9,8 +9,8 @@
 // Special Move: castSpell()- PowerCost(Special): 30 - Special Effect: Deals 40 health damage to opponent
 
 public class Mage extends GameCharacter {
+
     public Mage(String name) {
         super(name, 80, 100, 20, 10);
     }
-
 }
