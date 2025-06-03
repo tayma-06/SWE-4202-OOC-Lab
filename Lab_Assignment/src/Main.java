@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
+    public static void displayStats(GameCharacter player, GameCharacter enemy) {
+        System.out.println("-------- Game Stats--------------");
+        System.out.println(player.getName() + " - Health: " + player.getHealth() + " , Power: " + player.getPower());
+        System.out.println(enemy.getName() + " - Health: " + enemy.getHealth() + " , Power: " + enemy.getPower());
+    }
+
     public static void startGame(GameCharacter player, GameCharacter enemy) {
         System.out.println(
                 player.getName() + " the " + player.getClass().getSimpleName() + " enters the world of Aetherfall!");
@@ -65,5 +71,6 @@ public class Main {
                 System.out.println("Invalid Input");
         }
         startGame(player, enemy);
+        displayStats(player, enemy);
     }
 }

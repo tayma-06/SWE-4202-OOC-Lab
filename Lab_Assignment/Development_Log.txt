@@ -22,3 +22,4 @@ which returns the name of the class the object belongs to
 -Created a method named startGame() to begin the combat
 -Found out that we cannot access a non-static method from a static context,
 so made the startGame() method static
+-Added a method to display the game stats named displayStats()
