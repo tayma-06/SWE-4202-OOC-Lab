@@ -10,6 +10,6 @@
 
 public class CorruptedMortal extends GameCharacter {
     public CorruptedMortal() {
-        super("Corrupted Mortal", 90, 90, 18, 9);
+        super("CorruptedMortal", 90, 90, 18, 9);
     }
 }

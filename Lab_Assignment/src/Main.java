@@ -23,7 +23,6 @@ public class Main {
         String playerName;
         int choice;
         // Input player choices
-        String playerCharType = "";
         System.out.println("Choose a character: 1. Mage 2. Archer 3. Warrior");
         System.out.print("> ");
         choice = scanner.nextInt();

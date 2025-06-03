@@ -10,6 +10,6 @@
 
 public class RegionalWarlord extends GameCharacter {
     public RegionalWarlord() {
-        super("Regional WarLord", 130, 110, 20, 10);
+        super("RegionalWarLord", 130, 110, 20, 10);
     }
 }
