@@ -57,6 +57,7 @@ public class Main {
         System.out.println("1. Dark Overlord");
         System.out.println("2. Regional Warlord");
         System.out.println("3. Corrupted Mortal");
+        // Input choice for selecting enemy
         System.out.print("> ");
         choice = scanner.nextInt();
         switch (choice) {
