@@ -6,7 +6,7 @@
 // Power: 150
 // Standard Attack Damage: 25
 // Standard Attack Power Cost: 17
-// Special Move: summonDarkness()- PowerCost(Special): 40 - Special Effect: Deals 50 health damage to opponent and will weakenthe affect of the next attack by half
+// Special Move: summonDarkness()- PowerCost(Special): 40 - Special Effect: Deals 50 health damage to opponent and will weaken the affect of the next attack by half
 
 public class DarkOverlord extends GameCharacter {
     public DarkOverlord() {
