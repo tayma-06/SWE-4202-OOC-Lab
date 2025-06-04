@@ -103,7 +103,7 @@ public class Main {
                     continue;
             }
             displayStats(player, enemy);
-            System.out.println("Enenmy's Turn: ");
+            System.out.println("Enemy's Turn: ");
             if (enemy.isAlive()) {
                 int decision = random.nextInt(2); // 0-attack 1-special
                 switch (decision) {
