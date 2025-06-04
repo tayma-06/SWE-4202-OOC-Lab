@@ -91,7 +91,8 @@ public class Main {
                     player.useSpecialMove(enemy);
                     break;
                 default:
-                    System.out.println("Invalid command");
+                    System.out.println("Invalid command. Try again.");
+                    continue;
             }
             displayStats(player, enemy);
             if (enemy.isAlive()) {
