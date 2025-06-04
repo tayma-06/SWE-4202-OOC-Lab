@@ -73,7 +73,22 @@ public class Main {
                 System.out.println("Invalid Input");
         }
         startGame(player, enemy);
-        displayStats(player, enemy);
-        scanner.close();
+        scanner.nextLine();
+        while (player.isAlive() && enemy.isAlive()) {
+            System.out.print("> ");
+            String command = scanner.nextLine();
+            switch (command) {
+                case "attack":
+                    player.attack(enemy);
+                default:
+                    System.out.println("Invalid command");
+            }
+            if (enemy.isAlive()) {
+                System.out.println("Enemy Attacks");
+                enemy.attack(player);
+            }
+            displayStats(player, enemy);
+        }
+
     }
 }

@@ -56,4 +56,19 @@ public class GameCharacter {
         this.name = name;
     }
 
+    public boolean isAlive() {
+        return health > 0;
+    }
+
+    public void attack(GameCharacter opponent) {
+        if (getPower() >= getStandardAttackPowerCost()) {
+            System.out.println(getName() + " used attack on " + opponent.getName());
+            System.out.println(getName() + " caused " + getStandardAttackDamage() + " damage.");
+            opponent.setHealth(opponent.getHealth() - getStandardAttackDamage());
+            setPower(getPower() - getStandardAttackPowerCost());
+        } else {
+            System.out.println("Not enough Power");
+        }
+    }
+
 }

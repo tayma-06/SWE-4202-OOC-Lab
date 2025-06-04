@@ -23,3 +23,12 @@ which returns the name of the class the object belongs to
 -Found out that we cannot access a non-static method from a static context,
 so made the startGame() method static
 -Added a method to display the game stats named displayStats()
+
+6/4/2025
+-Created a boolean method isAlive() in the class GameCharacter()
+If the health is more the 0 then the player is alive
+-Created a method on GameCharacter called attack()
+This method handles the mechanisms of the attack command
+-In Main.java added a while loop that will handle the turns of the game
+It will stop once the health of any of the two reaches 0 or less
+-Override used in the Archer.java class for the attack method
