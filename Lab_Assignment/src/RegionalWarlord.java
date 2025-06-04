@@ -12,4 +12,8 @@ public class RegionalWarlord extends GameCharacter {
     public RegionalWarlord() {
         super("RegionalWarLord", 130, 110, 20, 10);
     }
+
+    public void special(GameCharacter opponent) {
+
+    }
 }

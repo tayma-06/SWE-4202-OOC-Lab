@@ -12,4 +12,8 @@ public class Warrior extends GameCharacter {
     public Warrior(String name) {
         super(name, 120, 100, 12, 5);
     }
+
+    public void special(GameCharacter opponent) {
+
+    }
 }

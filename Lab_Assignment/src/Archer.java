@@ -14,14 +14,7 @@ public class Archer extends GameCharacter {
         super(name, 100, 100, 15, 8);
     }
 
-    @Override
-    public void attack(GameCharacter opponent) {
-        if (getPower() >= getStandardAttackPowerCost()) {
-            System.out.println(getName() + " used a precise shot on " + opponent.getName());
-            System.out.println(getName() + " caused " + getStandardAttackDamage() + " damage.");
-            setPower(getPower() - getStandardAttackPowerCost());
-        } else {
-            System.out.println("Not enough Power");
-        }
+    public void special(GameCharacter opponent) {
+
     }
 }

@@ -1,6 +1,6 @@
 // This class is a blueprint for the characters of the game "Legends of Aetherfall"
 
-public class GameCharacter {
+abstract class GameCharacter {
     // The attributes of all the characters are same
     private String name;
     private int health;
@@ -70,5 +70,7 @@ public class GameCharacter {
             System.out.println("Not enough Power");
         }
     }
+
+    abstract void special(GameCharacter opponent);
 
 }

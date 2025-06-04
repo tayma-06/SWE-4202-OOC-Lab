@@ -80,9 +80,14 @@ public class Main {
             switch (command) {
                 case "attack":
                     player.attack(enemy);
+                    break;
+                case "special":
+                    player.special(enemy);
+                    break;
                 default:
                     System.out.println("Invalid command");
             }
+            displayStats(player, enemy);
             if (enemy.isAlive()) {
                 System.out.println("Enemy Attacks");
                 enemy.attack(player);

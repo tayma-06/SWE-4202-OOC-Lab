@@ -13,4 +13,8 @@ public class Mage extends GameCharacter {
     public Mage(String name) {
         super(name, 80, 100, 20, 10);
     }
+
+    public void special(GameCharacter opponent) {
+
+    }
 }

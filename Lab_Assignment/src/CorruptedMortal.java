@@ -12,4 +12,9 @@ public class CorruptedMortal extends GameCharacter {
     public CorruptedMortal() {
         super("CorruptedMortal", 90, 90, 18, 9);
     }
+
+    @Override
+    public void special(GameCharacter opponent) {
+
+    }
 }

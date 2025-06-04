@@ -12,4 +12,8 @@ public class DarkOverlord extends GameCharacter {
     public DarkOverlord() {
         super("DarkOverlord", 200, 150, 25, 17);
     }
+
+    public void special(GameCharacter opponent) {
+
+    }
 }
