@@ -15,6 +15,14 @@ public class RegionalWarlord extends GameCharacter {
 
     @Override
     public void useSpecialMove(GameCharacter opponent) {
-
+        if (getPower() >= 35) {
+            System.out.println(getName() + " used Toxic Aura on " + opponent.getName());
+            System.out.println(getName() + " caused 30 damage.");
+            opponent.setHealth(opponent.getHealth() - 30);
+            setPower(getPower() - 35);
+            System.out.println("Cannot attack for next 20 seconds.");
+        } else {
+            System.out.println("Insufficient Power.");
+        }
     }
 }

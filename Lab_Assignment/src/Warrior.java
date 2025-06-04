@@ -15,6 +15,13 @@ public class Warrior extends GameCharacter {
 
     @Override
     public void useSpecialMove(GameCharacter opponent) {
-
+        if (getPower() >= 35) {
+            System.out.println(getName() + " used Mighty Strike on " + opponent.getName());
+            System.out.println(getName() + " caused 35 damage.");
+            opponent.setHealth(opponent.getHealth() - 35);
+            setPower(getPower() - 35);
+        } else {
+            System.out.println("Insufficient Power.");
+        }
     }
 }

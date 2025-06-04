@@ -37,3 +37,7 @@ It will stop once the health of any of the two reaches 0 or less
 -Modified main a bit
 -Added a static method in Main class for displaying result
 -Added mechanics in the useSpecialMove() in the subclasses
+
+Note : 
+-Add the weakening effect in DarkOverlord
+-Add the time stop in RegionalWarlord

@@ -18,14 +18,16 @@ public class Archer extends GameCharacter {
     public void useSpecialMove(GameCharacter opponent) {
         if (getPower() >= 50) {
             System.out.println(getName() + " used Multi Shot on " + opponent.getName());
-            System.out.println(getName() + " caused " + getStandardAttackDamage() + " damage.");
+            System.out.println(getName() + " caused 60 damage.");
             opponent.setHealth(opponent.getHealth() - 60);
             setPower(getPower() - 50);
         } else if (getPower() >= 25) {
             System.out.println(getName() + " used Quick Shot on " + opponent.getName());
-            System.out.println(getName() + " caused " + getStandardAttackDamage() + " damage.");
+            System.out.println(getName() + " caused 30 damage.");
             opponent.setHealth(opponent.getHealth() - 30);
             setPower(getPower() - 25);
+        } else {
+            System.out.println("Insufficient Power.");
         }
     }
 }

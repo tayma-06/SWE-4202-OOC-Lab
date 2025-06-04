@@ -18,7 +18,14 @@ public class Main {
     }
 
     public static void displayResult(GameCharacter player, GameCharacter enemy) {
-
+        System.out.println("---------Results-----------------");
+        if (!player.isAlive()) {
+            System.out.println(enemy.getName() + " wins the battle!");
+            System.out.println(player.getName() + " has been defeated!");
+        } else {
+            System.out.println(player.getName() + " wins the battle!");
+            System.out.println(enemy.getName() + " has been defeated!");
+        }
     }
 
     public static void main(String[] args) {
@@ -81,6 +88,7 @@ public class Main {
         startGame(player, enemy);
         scanner.nextLine();
         while (player.isAlive() && enemy.isAlive()) {
+            System.out.println("Player's Turn : ");
             System.out.print("> ");
             String command = scanner.nextLine();
             switch (command) {
@@ -95,6 +103,7 @@ public class Main {
                     continue;
             }
             displayStats(player, enemy);
+            System.out.println("Enenmy's Turn: ");
             if (enemy.isAlive()) {
                 int decision = random.nextInt(2); // 0-attack 1-special
                 switch (decision) {
@@ -108,6 +117,6 @@ public class Main {
             }
             displayStats(player, enemy);
         }
-
+        displayResult(player, enemy);
     }
 }

@@ -16,6 +16,13 @@ public class Mage extends GameCharacter {
 
     @Override
     public void useSpecialMove(GameCharacter opponent) {
-
+        if (getPower() >= 30) {
+            System.out.println(getName() + " casted spell on " + opponent.getName());
+            System.out.println(getName() + " caused 40 damage.");
+            opponent.setHealth(opponent.getHealth() - 40);
+            setPower(getPower() - 30);
+        } else {
+            System.out.println("Insufficient Power.");
+        }
     }
 }
