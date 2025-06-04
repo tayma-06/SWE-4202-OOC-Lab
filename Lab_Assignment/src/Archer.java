@@ -14,7 +14,8 @@ public class Archer extends GameCharacter {
         super(name, 100, 100, 15, 8);
     }
 
-    public void special(GameCharacter opponent) {
+    @Override
+    public void useSpecialMove(GameCharacter opponent) {
 
     }
 }

@@ -31,6 +31,7 @@ If the health is more the 0 then the player is alive
 This method handles the mechanisms of the attack command
 -In Main.java added a while loop that will handle the turns of the game
 It will stop once the health of any of the two reaches 0 or less
--Made the parent class GameCharacter into an abstract class as added special as an abstract method
-It is because the method special() was indeed common in all the subclasses but had different mechanics
-Could have also implemented interface but did not cover that
+-Added useSpecialMove() as a method in GameCharacter class
+-Used Override and added useSpecialMove() method in all the subclasses
+-Added java.util.Random for using random value for making automatic decision for move in enemy's turn
+-Modified main a bit

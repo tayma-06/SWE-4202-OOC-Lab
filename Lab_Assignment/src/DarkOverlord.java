@@ -13,7 +13,8 @@ public class DarkOverlord extends GameCharacter {
         super("DarkOverlord", 200, 150, 25, 17);
     }
 
-    public void special(GameCharacter opponent) {
+    @Override
+    public void useSpecialMove(GameCharacter opponent) {
 
     }
 }

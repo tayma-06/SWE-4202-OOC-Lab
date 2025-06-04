@@ -14,7 +14,7 @@ public class CorruptedMortal extends GameCharacter {
     }
 
     @Override
-    public void special(GameCharacter opponent) {
+    public void useSpecialMove(GameCharacter opponent) {
 
     }
 }

@@ -14,7 +14,8 @@ public class Mage extends GameCharacter {
         super(name, 80, 100, 20, 10);
     }
 
-    public void special(GameCharacter opponent) {
+    @Override
+    public void useSpecialMove(GameCharacter opponent) {
 
     }
 }

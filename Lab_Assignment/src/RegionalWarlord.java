@@ -13,7 +13,8 @@ public class RegionalWarlord extends GameCharacter {
         super("RegionalWarLord", 130, 110, 20, 10);
     }
 
-    public void special(GameCharacter opponent) {
+    @Override
+    public void useSpecialMove(GameCharacter opponent) {
 
     }
 }

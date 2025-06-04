@@ -1,6 +1,7 @@
 // Main Class
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void displayStats(GameCharacter player, GameCharacter enemy) {
@@ -16,8 +17,13 @@ public class Main {
         System.out.println("Battle Start!");
     }
 
+    public static void displayResult(GameCharacter player, GameCharacter enemy) {
+
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
         GameCharacter player = null;
         GameCharacter enemy = null;
         String playerName;
@@ -82,15 +88,22 @@ public class Main {
                     player.attack(enemy);
                     break;
                 case "special":
-                    player.special(enemy);
+                    player.useSpecialMove(enemy);
                     break;
                 default:
                     System.out.println("Invalid command");
             }
             displayStats(player, enemy);
             if (enemy.isAlive()) {
-                System.out.println("Enemy Attacks");
-                enemy.attack(player);
+                int decision = random.nextInt(2); // 0-attack 1-special
+                switch (decision) {
+                    case 0:
+                        enemy.attack(player);
+                        break;
+                    case 1:
+                        enemy.useSpecialMove(player);
+                        break;
+                }
             }
             displayStats(player, enemy);
         }

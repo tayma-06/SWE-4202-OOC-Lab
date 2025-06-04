@@ -13,7 +13,8 @@ public class Warrior extends GameCharacter {
         super(name, 120, 100, 12, 5);
     }
 
-    public void special(GameCharacter opponent) {
+    @Override
+    public void useSpecialMove(GameCharacter opponent) {
 
     }
 }
