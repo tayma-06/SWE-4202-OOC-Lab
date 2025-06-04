@@ -13,13 +13,17 @@ public class Warrior extends GameCharacter {
         super(name, 120, 100, 12, 5);
     }
 
+    public void toxicAura(GameCharacter opponent) {
+        System.out.println(getName() + " used Mighty Strike on " + opponent.getName());
+        System.out.println(getName() + " caused 35 damage.");
+        opponent.setHealth(opponent.getHealth() - 35);
+        setPower(getPower() - 35);
+    }
+
     @Override
-    public void useSpecialMove(GameCharacter opponent) {
+    public void special(GameCharacter opponent) {
         if (getPower() >= 35) {
-            System.out.println(getName() + " used Mighty Strike on " + opponent.getName());
-            System.out.println(getName() + " caused 35 damage.");
-            opponent.setHealth(opponent.getHealth() - 35);
-            setPower(getPower() - 35);
+            toxicAura(opponent);
         } else {
             System.out.println("Insufficient Power.");
         }

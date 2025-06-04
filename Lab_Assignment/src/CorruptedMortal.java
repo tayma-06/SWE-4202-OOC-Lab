@@ -13,13 +13,17 @@ public class CorruptedMortal extends GameCharacter {
         super("CorruptedMortal", 90, 90, 18, 9);
     }
 
+    public void curse(GameCharacter opponent) {
+        System.out.println(getName() + " cursed " + opponent.getName());
+        System.out.println(getName() + " caused 25 damage.");
+        opponent.setHealth(opponent.getHealth() - 25);
+        setPower(getPower() - 20);
+    }
+
     @Override
-    public void useSpecialMove(GameCharacter opponent) {
+    public void special(GameCharacter opponent) {
         if (getPower() >= 35) {
-            System.out.println(getName() + " cursed " + opponent.getName());
-            System.out.println(getName() + " caused 25 damage.");
-            opponent.setHealth(opponent.getHealth() - 25);
-            setPower(getPower() - 20);
+
         } else {
             System.out.println("Insufficient Power.");
         }

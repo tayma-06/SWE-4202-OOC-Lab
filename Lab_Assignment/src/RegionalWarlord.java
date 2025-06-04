@@ -13,14 +13,18 @@ public class RegionalWarlord extends GameCharacter {
         super("RegionalWarLord", 130, 110, 20, 10);
     }
 
+    public void toxicAura(GameCharacter opponent) {
+        System.out.println(getName() + " used Toxic Aura on " + opponent.getName());
+        System.out.println(getName() + " caused 30 damage.");
+        opponent.setHealth(opponent.getHealth() - 30);
+        setPower(getPower() - 35);
+        System.out.println("Cannot attack for next 20 seconds.");
+    }
+
     @Override
-    public void useSpecialMove(GameCharacter opponent) {
+    public void special(GameCharacter opponent) {
         if (getPower() >= 35) {
-            System.out.println(getName() + " used Toxic Aura on " + opponent.getName());
-            System.out.println(getName() + " caused 30 damage.");
-            opponent.setHealth(opponent.getHealth() - 30);
-            setPower(getPower() - 35);
-            System.out.println("Cannot attack for next 20 seconds.");
+            toxicAura(opponent);
         } else {
             System.out.println("Insufficient Power.");
         }

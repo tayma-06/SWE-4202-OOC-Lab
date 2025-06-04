@@ -13,13 +13,17 @@ public class DarkOverlord extends GameCharacter {
         super("DarkOverlord", 200, 150, 25, 17);
     }
 
+    public void summonDarkness(GameCharacter opponent) {
+        System.out.println(getName() + " Summoned Darkness on " + opponent.getName());
+        System.out.println(getName() + " caused 50 damage.");
+        opponent.setHealth(opponent.getHealth() - 50);
+        setPower(getPower() - 40);
+    }
+
     @Override
-    public void useSpecialMove(GameCharacter opponent) {
+    public void special(GameCharacter opponent) {
         if (getPower() >= 40) {
-            System.out.println(getName() + " Summoned Darkness on " + opponent.getName());
-            System.out.println(getName() + " caused 50 damage.");
-            opponent.setHealth(opponent.getHealth() - 50);
-            setPower(getPower() - 40);
+            summonDarkness(opponent);
         } else {
             System.out.println("Insufficient Power.");
         }

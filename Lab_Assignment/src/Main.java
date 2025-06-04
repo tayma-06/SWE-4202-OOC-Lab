@@ -96,7 +96,7 @@ public class Main {
                     player.attack(enemy);
                     break;
                 case "special":
-                    player.useSpecialMove(enemy);
+                    player.special(enemy);
                     break;
                 default:
                     System.out.println("Invalid command. Try again.");
@@ -111,7 +111,7 @@ public class Main {
                         enemy.attack(player);
                         break;
                     case 1:
-                        enemy.useSpecialMove(player);
+                        enemy.special(player);
                         break;
                 }
             }

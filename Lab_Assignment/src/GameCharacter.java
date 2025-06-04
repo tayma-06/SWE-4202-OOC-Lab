@@ -71,7 +71,7 @@ public class GameCharacter {
         }
     }
 
-    public void useSpecialMove(GameCharacter opponent) {
+    public void special(GameCharacter opponent) {
 
     }
 
