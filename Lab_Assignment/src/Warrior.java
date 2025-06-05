@@ -13,7 +13,7 @@ public class Warrior extends GameCharacter {
         super(name, 120, 100, 12, 5);
     }
 
-    public void toxicAura(GameCharacter opponent) {
+    public void mightyStrike(GameCharacter opponent) {
         int damage = 35;
         if (getWeaken() > 0) {
             damage /= 2;
@@ -29,7 +29,7 @@ public class Warrior extends GameCharacter {
     @Override
     public void special(GameCharacter opponent) {
         if (getPower() >= 35) {
-            toxicAura(opponent);
+            mightyStrike(opponent);
         } else {
             System.out.println("Insufficient Power.");
         }

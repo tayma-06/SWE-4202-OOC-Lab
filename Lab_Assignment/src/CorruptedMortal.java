@@ -22,7 +22,7 @@ public class CorruptedMortal extends GameCharacter {
 
     @Override
     public void special(GameCharacter opponent) {
-        if (getPower() >= 35) {
+        if (getPower() >= 20) {
             curse(opponent);
         } else {
             attack(opponent);

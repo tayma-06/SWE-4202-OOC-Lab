@@ -24,7 +24,7 @@ public class DarkOverlord extends GameCharacter {
     public void special(GameCharacter opponent) {
         if (getPower() >= 40) {
             summonDarkness(opponent);
-            setWeaken(3);
+            opponent.setWeaken(3);
         } else {
             attack(opponent);
         }
