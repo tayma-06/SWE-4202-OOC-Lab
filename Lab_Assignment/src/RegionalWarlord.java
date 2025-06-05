@@ -26,7 +26,7 @@ public class RegionalWarlord extends GameCharacter {
         if (getPower() >= 35) {
             toxicAura(opponent);
         } else {
-            System.out.println("Insufficient Power.");
+            attack(opponent);
         }
     }
 }

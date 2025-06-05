@@ -7,6 +7,7 @@ public class GameCharacter {
     private int power;
     private int standardAttackDamage;
     private int standardAttackPowerCost;
+    private int weaken = 0;
 
     public GameCharacter(String name, int health, int power, int standardAttackDamage, int standardAttackPowerCost) {
         this.name = name;
@@ -56,15 +57,31 @@ public class GameCharacter {
         this.name = name;
     }
 
+    public int getWeaken() {
+        return weaken;
+    }
+
+    public void setWeaken(int weaken) {
+        this.weaken = weaken;
+    }
+
     public boolean isAlive() {
         return health > 0;
     }
 
     public void attack(GameCharacter opponent) {
         if (power >= standardAttackPowerCost) {
+            int damage = standardAttackDamage;
+
+            if (weaken > 0) {
+                damage /= 2;
+                weaken--; // reduce weaken counter after use
+                System.out.println(name + "'s attack was weakened!");
+            }
+
             System.out.println(name + " used attack on " + opponent.getName());
-            System.out.println(name + " caused " + standardAttackDamage + " damage.");
-            opponent.setHealth(opponent.getHealth() - standardAttackDamage);
+            System.out.println(name + " caused " + damage + " damage.");
+            opponent.setHealth(opponent.getHealth() - damage);
             power -= standardAttackPowerCost;
         } else {
             System.out.println("Not enough Power");

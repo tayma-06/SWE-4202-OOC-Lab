@@ -25,7 +25,7 @@ public class CorruptedMortal extends GameCharacter {
         if (getPower() >= 35) {
 
         } else {
-            System.out.println("Insufficient Power.");
+            attack(opponent);
         }
     }
 }
