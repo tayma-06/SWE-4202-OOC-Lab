@@ -14,7 +14,7 @@ public class Archer extends GameCharacter {
         super(name, 100, 100, 15, 8);
     }
 
-    public void quickSort(GameCharacter opponent) {
+    public void quickShot(GameCharacter opponent) {
         System.out.println(getName() + " used Quick Shot on " + opponent.getName());
         System.out.println(getName() + " caused 30 damage.");
         opponent.setHealth(opponent.getHealth() - 30);
@@ -33,7 +33,7 @@ public class Archer extends GameCharacter {
         if (getPower() >= 50) {
             multiShot(opponent);
         } else if (getPower() >= 25) {
-            quickSort(opponent);
+            quickShot(opponent);
         } else {
             System.out.println("Insufficient Power.");
         }
