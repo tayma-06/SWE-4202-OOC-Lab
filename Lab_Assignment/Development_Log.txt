@@ -38,6 +38,8 @@ It will stop once the health of any of the two reaches 0 or less
 -Added a static method in Main class for displaying result
 -Added mechanics in the useSpecialMove() in the subclasses
 
-Note : 
--Add the weakening effect in DarkOverlord (weaken 3 attacks)
--Add the time stop in RegionalWarlord
+6/5/2025
+-Modified all the attack and special effect for the weakening effect of DarkOverlord
+-Modified the special effect of RegionalWarlord so that it freezes input
+will need a bit of refinements
+-Modified little things within the code
