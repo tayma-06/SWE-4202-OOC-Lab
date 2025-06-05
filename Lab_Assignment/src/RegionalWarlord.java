@@ -8,7 +8,11 @@
 // Standard Attack power cost: 10
 // Special Move: toxicAura()- PowerCost(Special): 35 - Special Effect: Deals 30 health damage and next 20 seconds the user cannot attack
 
+import java.util.Random;
+
 public class RegionalWarlord extends GameCharacter {
+    Random random = new Random();
+
     public RegionalWarlord() {
         super("RegionalWarLord", 130, 110, 20, 10);
     }
@@ -19,6 +23,11 @@ public class RegionalWarlord extends GameCharacter {
         opponent.setHealth(opponent.getHealth() - 30);
         setPower(getPower() - 35);
         System.out.println("Cannot attack for next 20 seconds.");
+        long startTime = System.currentTimeMillis();
+        long duration = 20 * 1000; // 20 seconds in milliseconds
+        while (System.currentTimeMillis() - startTime < duration) {
+
+        }
     }
 
     @Override
