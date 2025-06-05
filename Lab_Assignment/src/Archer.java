@@ -15,16 +15,28 @@ public class Archer extends GameCharacter {
     }
 
     public void quickShot(GameCharacter opponent) {
+        int damage = 30;
+        if (getWeaken() > 0) {
+            damage /= 2;
+            setWeaken(getWeaken() - 1);
+            System.out.println(getName() + "'s attack was weakened!");
+        }
         System.out.println(getName() + " used Quick Shot on " + opponent.getName());
-        System.out.println(getName() + " caused 30 damage.");
-        opponent.setHealth(opponent.getHealth() - 30);
+        System.out.println(getName() + " caused " + damage + " damage.");
+        opponent.setHealth(opponent.getHealth() - damage);
         setPower(getPower() - 25);
     }
 
     public void multiShot(GameCharacter opponent) {
+        int damage = 60;
+        if (getWeaken() > 0) {
+            damage /= 2;
+            setWeaken(getWeaken() - 1);
+            System.out.println(getName() + "'s attack was weakened!");
+        }
         System.out.println(getName() + " used Multi Shot on " + opponent.getName());
-        System.out.println(getName() + " caused 60 damage.");
-        opponent.setHealth(opponent.getHealth() - 60);
+        System.out.println(getName() + " caused " + damage + " damage.");
+        opponent.setHealth(opponent.getHealth() - damage);
         setPower(getPower() - 50);
     }
 
