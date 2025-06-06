@@ -15,6 +15,7 @@ public class Main {
                 player.getName() + " the " + player.getClass().getSimpleName() + " enters the world of Aetherfall!");
         System.out.println(enemy.getName() + " rises to start spread chaos!");
         System.out.println("Battle Start!");
+        displayStats(player, enemy);
     }
 
     public static void displayResult(GameCharacter player, GameCharacter enemy) {

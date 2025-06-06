@@ -44,7 +44,6 @@ It will stop once the health of any of the two reaches 0 or less
 will need a bit of refinements
 -Modified little things within the code
 
-Note 
--If health and power of enemy less than warrior it can shield
-so add shield effect
--If power is insufficient in protagonist case
+6/6/2025
+-Added Shield effect in the Warrior one and changed mechanics a bit
+-Changed the weakening effect for DarkOverlord for only the next attack
