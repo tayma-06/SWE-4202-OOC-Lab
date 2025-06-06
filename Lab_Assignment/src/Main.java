@@ -98,6 +98,8 @@ public class Main {
                 case "special":
                     player.special(enemy);
                     break;
+                case "exit":
+                    return;
                 default:
                     System.out.println("Invalid command. Try again.");
                     continue;

@@ -9,6 +9,8 @@
 // Special Move: mightyStrike()- PowerCost(Special): 35 - Special Effect: Deals 35 health damage to opponent
 
 public class Warrior extends GameCharacter {
+    private boolean shield = false;
+
     public Warrior(String name) {
         super(name, 120, 100, 12, 5);
     }
@@ -32,6 +34,29 @@ public class Warrior extends GameCharacter {
             mightyStrike(opponent);
         } else {
             System.out.println("Insufficient Power.");
+        }
+        shield(opponent);
+    }
+
+    public void shield(GameCharacter opponent) {
+        if (getHealth() > opponent.getHealth()) {
+            shield = true;
+            System.out.println(getName() + " activated Shield!");
+        }
+    }
+
+    @Override
+    public void attack(GameCharacter opponent) {
+        super.attack(opponent);
+        shield(opponent);
+    }
+
+    public void setHealth(int health) {
+        if (shield) {
+            System.out.println(getName() + "'s Shield blocked the attack!");
+            shield = false;
+        } else {
+            super.setHealth(health);
         }
     }
 }

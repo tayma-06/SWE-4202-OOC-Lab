@@ -18,7 +18,7 @@ public class Archer extends GameCharacter {
         int damage = 30;
         if (getWeaken() > 0) {
             damage /= 2;
-            setWeaken(getWeaken() - 1);
+            setWeaken(getWeaken() - 2); // twice effect
             System.out.println(getName() + "'s attack was weakened!");
         }
         System.out.println(getName() + " used Quick Shot on " + opponent.getName());
