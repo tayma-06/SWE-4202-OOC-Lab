@@ -4,13 +4,13 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Main {
-    public static void displayStats(GameCharacter player, GameCharacter enemy) {
+    public static void displayStats(GameCharacter player, GameCharacter enemy) { // shows status
         System.out.println("-------- Game Stats--------------");
         System.out.println(player.getName() + " - Health: " + player.getHealth() + " , Power: " + player.getPower());
         System.out.println(enemy.getName() + " - Health: " + enemy.getHealth() + " , Power: " + enemy.getPower());
     }
 
-    public static void startGame(GameCharacter player, GameCharacter enemy) {
+    public static void startGame(GameCharacter player, GameCharacter enemy) { // starts the game
         System.out.println(
                 player.getName() + " the " + player.getClass().getSimpleName() + " enters the world of Aetherfall!");
         System.out.println(enemy.getName() + " rises to start spread chaos!");
@@ -18,7 +18,7 @@ public class Main {
         displayStats(player, enemy);
     }
 
-    public static void displayResult(GameCharacter player, GameCharacter enemy) {
+    public static void displayResult(GameCharacter player, GameCharacter enemy) { // shows result when game is over
         System.out.println("---------Results-----------------");
         if (!player.isAlive()) {
             System.out.println(enemy.getName() + " wins the battle!");
@@ -30,9 +30,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
-        GameCharacter player = null;
+        Scanner scanner = new Scanner(System.in); // for taking input
+        Random random = new Random(); // for choices in the opponents
+        GameCharacter player = null; // creating two objects
         GameCharacter enemy = null;
         String playerName;
         int choice;
@@ -41,7 +41,7 @@ public class Main {
         System.out.print("> ");
         choice = scanner.nextInt();
         scanner.nextLine(); // to consume nextLine
-        switch (choice) {
+        switch (choice) { // choosing protagonist type
             case 1:
                 System.out.println("You have chosen Mage");
                 System.out.println("Enter your mage name");
@@ -73,7 +73,7 @@ public class Main {
         // Input choice for selecting enemy
         System.out.print("> ");
         choice = scanner.nextInt();
-        switch (choice) {
+        switch (choice) { // choosing antagonist type
             case 1:
                 enemy = new DarkOverlord();
                 break;
@@ -88,7 +88,7 @@ public class Main {
         }
         startGame(player, enemy);
         scanner.nextLine();
-        while (player.isAlive() && enemy.isAlive()) {
+        while (player.isAlive() && enemy.isAlive()) { // loop runs until any of the player or enemy dies
             System.out.println("Player's Turn : ");
             System.out.print("> ");
             String command = scanner.nextLine();

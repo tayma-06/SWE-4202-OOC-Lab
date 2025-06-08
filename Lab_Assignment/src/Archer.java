@@ -14,7 +14,7 @@ public class Archer extends GameCharacter {
         super(name, 100, 100, 15, 8);
     }
 
-    public void quickShot(GameCharacter opponent) {
+    public void quickShot(GameCharacter opponent) { // special effect for quickshot or single shot
         int damage = 30;
         damage = calculateDamage(damage);
         System.out.println(getName() + " used Quick Shot on " + opponent.getName());
@@ -23,7 +23,7 @@ public class Archer extends GameCharacter {
         setPower(getPower() - 25);
     }
 
-    public void multiShot(GameCharacter opponent) {
+    public void multiShot(GameCharacter opponent) { // special effect for multishot
         int damage = 60;
         damage = calculateDamage(damage);
         System.out.println(getName() + " used Multi Shot on " + opponent.getName());

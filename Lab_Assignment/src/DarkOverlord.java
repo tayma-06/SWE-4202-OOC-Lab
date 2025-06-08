@@ -13,7 +13,7 @@ public class DarkOverlord extends GameCharacter {
         super("DarkOverlord", 200, 150, 25, 17);
     }
 
-    public void summonDarkness(GameCharacter opponent) {
+    public void summonDarkness(GameCharacter opponent) { // special effect for summoning darkness
         System.out.println(getName() + " Summoned Darkness on " + opponent.getName());
         System.out.println(getName() + " caused 50 damage.");
         opponent.setHealth(opponent.getHealth() - 50);

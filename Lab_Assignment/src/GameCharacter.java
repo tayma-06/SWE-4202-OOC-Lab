@@ -7,9 +7,9 @@ public class GameCharacter {
     private int power;
     private int standardAttackDamage;
     private int standardAttackPowerCost;
-    private int weaken = 0;
+    private int weaken = 0; // special effect Dark Overlord
 
-    public GameCharacter(String name, int health, int power, int standardAttackDamage, int standardAttackPowerCost) {
+    public GameCharacter(String name, int health, int power, int standardAttackDamage, int standardAttackPowerCost) { // Constructor
         this.name = name;
         this.health = health;
         this.power = power;
@@ -17,7 +17,7 @@ public class GameCharacter {
         this.standardAttackPowerCost = standardAttackPowerCost;
     }
 
-    public String getName() {
+    public String getName() { // getter setter methods - Encapsulation
         return name;
     }
 
@@ -69,7 +69,7 @@ public class GameCharacter {
         return health > 0;
     }
 
-    public int calculateDamage(int damage) {
+    public int calculateDamage(int damage) { // calculates the damage - Dark Overlord special effect
         if (weaken > 0) {
             damage /= 2;
             weaken--;
@@ -78,7 +78,7 @@ public class GameCharacter {
         return damage;
     }
 
-    public void attack(GameCharacter opponent) {
+    public void attack(GameCharacter opponent) { // attack method : mechanics for attacking the opponent
         if (power >= standardAttackPowerCost) {
             int damage = standardAttackDamage;
             damage = calculateDamage(damage);
@@ -91,7 +91,7 @@ public class GameCharacter {
         }
     }
 
-    public void special(GameCharacter opponent) {
+    public void special(GameCharacter opponent) { // special method for using special effect attacks on the opponent
 
     }
 

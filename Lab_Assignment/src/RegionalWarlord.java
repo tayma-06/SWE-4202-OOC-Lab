@@ -17,7 +17,7 @@ public class RegionalWarlord extends GameCharacter {
         super("RegionalWarLord", 130, 110, 20, 10);
     }
 
-    public void toxicAura(GameCharacter opponent) {
+    public void toxicAura(GameCharacter opponent) { // special effect for using toxic aura
         System.out.println(getName() + " used Toxic Aura on " + opponent.getName());
         System.out.println(getName() + " caused 30 damage.");
         opponent.setHealth(opponent.getHealth() - 30);

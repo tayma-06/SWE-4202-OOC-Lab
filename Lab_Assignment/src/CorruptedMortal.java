@@ -13,7 +13,7 @@ public class CorruptedMortal extends GameCharacter {
         super("CorruptedMortal", 90, 90, 18, 9);
     }
 
-    public void curse(GameCharacter opponent) {
+    public void curse(GameCharacter opponent) { // special effect for cursing
         System.out.println(getName() + " cursed " + opponent.getName());
         System.out.println(getName() + " caused 25 damage.");
         opponent.setHealth(opponent.getHealth() - 25);

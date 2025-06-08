@@ -15,7 +15,7 @@ public class Warrior extends GameCharacter {
         super(name, 120, 100, 12, 5);
     }
 
-    public void mightyStrike(GameCharacter opponent) {
+    public void mightyStrike(GameCharacter opponent) { // special effect for mighty strike
         int damage = 35;
         damage = calculateDamage(damage);
         System.out.println(getName() + " used Mighty Strike on " + opponent.getName());
@@ -34,7 +34,7 @@ public class Warrior extends GameCharacter {
         shield(opponent);
     }
 
-    public void shield(GameCharacter opponent) {
+    public void shield(GameCharacter opponent) { // shield effect for the warrior
         if (getHealth() > opponent.getHealth()) {
             shield = true;
             System.out.println(getName() + " activated Shield!");

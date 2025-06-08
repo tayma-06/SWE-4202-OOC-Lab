@@ -24,7 +24,7 @@ public class Mage extends GameCharacter {
     }
 
     @Override
-    public void special(GameCharacter opponent) {
+    public void special(GameCharacter opponent) { // special effect is casting spell
         if (getPower() >= 30) {
             castSpell(opponent);
         } else {
