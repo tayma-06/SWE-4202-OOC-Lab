@@ -15,7 +15,7 @@ public class Mage extends GameCharacter {
     }
 
     public void castSpell(GameCharacter opponent) {
-        int damage = getStandardAttackDamage();
+        int damage = 40;
         damage = calculateDamage(damage);
         System.out.println(getName() + " casted spell on " + opponent.getName());
         System.out.println(getName() + " caused " + damage + " damage.");

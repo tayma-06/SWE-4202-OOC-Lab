@@ -24,7 +24,6 @@ public class Warrior extends GameCharacter {
         setPower(getPower() - 35);
     }
 
-    @Override
     public void special(GameCharacter opponent) {
         if (getPower() >= 35) {
             mightyStrike(opponent);

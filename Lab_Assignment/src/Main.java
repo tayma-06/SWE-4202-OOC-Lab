@@ -22,11 +22,17 @@ public class Main {
         System.out.println("---------Results-----------------");
         if (!player.isAlive()) {
             System.out.println(enemy.getName() + " wins the battle!");
-            System.out.println(player.getName() + " has been defeated!");
+            System.out.println(player.getName() + " the " + player.getClass().getSimpleName() + " has been defeated!");
         } else {
-            System.out.println(player.getName() + " wins the battle!");
+            System.out.println(player.getName() + " the " + player.getClass().getSimpleName() + " wins the battle!");
             System.out.println(enemy.getName() + " has been defeated!");
         }
+    }
+
+    public static void displayInputWindow() {
+        System.out.println("You have chosen Mage");
+        System.out.println("Enter your mage name");
+        System.out.print("> ");
     }
 
     public static void main(String[] args) {

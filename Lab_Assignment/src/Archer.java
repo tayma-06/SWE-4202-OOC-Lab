@@ -32,7 +32,6 @@ public class Archer extends GameCharacter {
         setPower(getPower() - 50);
     }
 
-    @Override
     public void special(GameCharacter opponent) {
         if (getPower() >= 50) {
             multiShot(opponent);

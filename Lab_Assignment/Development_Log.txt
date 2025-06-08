@@ -52,3 +52,4 @@ will need a bit of refinements
 -Added Commands
 -Used a method for calculating damage and made it more clean
 -Refined here and there a bit
+-Making the GameCharacter class into an abstract class

@@ -30,7 +30,6 @@ public class RegionalWarlord extends GameCharacter {
         }
     }
 
-    @Override
     public void special(GameCharacter opponent) {
         if (getPower() >= 35) {
             toxicAura(opponent);

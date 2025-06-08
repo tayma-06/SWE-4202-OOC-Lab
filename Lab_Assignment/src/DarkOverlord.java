@@ -20,7 +20,6 @@ public class DarkOverlord extends GameCharacter {
         setPower(getPower() - 40);
     }
 
-    @Override
     public void special(GameCharacter opponent) {
         if (getPower() >= 40) {
             summonDarkness(opponent);

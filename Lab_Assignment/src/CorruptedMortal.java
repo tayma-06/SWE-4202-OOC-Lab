@@ -20,7 +20,6 @@ public class CorruptedMortal extends GameCharacter {
         setPower(getPower() - 20);
     }
 
-    @Override
     public void special(GameCharacter opponent) {
         if (getPower() >= 20) {
             curse(opponent);

@@ -1,6 +1,6 @@
 // This class is a blueprint for the characters of the game "Legends of Aetherfall"
 
-public class GameCharacter {
+public abstract class GameCharacter {
     // The attributes of all the characters are same
     private String name;
     private int health;
@@ -91,8 +91,5 @@ public class GameCharacter {
         }
     }
 
-    public void special(GameCharacter opponent) { // special method for using special effect attacks on the opponent
-
-    }
-
+    public abstract void special(GameCharacter opponent);
 }
