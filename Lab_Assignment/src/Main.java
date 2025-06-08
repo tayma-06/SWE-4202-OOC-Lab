@@ -123,5 +123,6 @@ public class Main {
             displayStats(player, enemy);
         }
         displayResult(player, enemy);
+        scanner.close();
     }
 }
