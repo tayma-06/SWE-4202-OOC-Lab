@@ -94,15 +94,17 @@ public class Main {
             String command = scanner.nextLine();
             switch (command) {
                 case "attack":
+                case "Attack":
                     player.attack(enemy);
                     break;
                 case "special":
+                case "Special":
                     player.special(enemy);
                     break;
                 case "exit":
                     return;
                 default:
-                    System.out.println("Invalid command. Try again.");
+                    System.out.println("Invalid command. Try again using (attack, special, Attack, Special or exit)");
                     continue;
             }
             displayStats(player, enemy);
