@@ -47,3 +47,8 @@ will need a bit of refinements
 6/6/2025
 -Added Shield effect in the Warrior one and changed mechanics a bit
 -Changed the weakening effect for DarkOverlord for only the next attack
+
+6/8/2025
+-Added Commands
+-Used a method for calculating damage and made it more clean
+-Refined here and there a bit
