@@ -16,11 +16,7 @@ public class Mage extends GameCharacter {
 
     public void castSpell(GameCharacter opponent) {
         int damage = getStandardAttackDamage();
-        if (getWeaken() > 0) {
-            damage /= 2;
-            setWeaken(getWeaken() - 1);
-            System.out.println(getName() + "'s attack was weakened!");
-        }
+        damage = calculateDamage(damage);
         System.out.println(getName() + " casted spell on " + opponent.getName());
         System.out.println(getName() + " caused " + damage + " damage.");
         opponent.setHealth(opponent.getHealth() - damage);

@@ -17,11 +17,7 @@ public class Warrior extends GameCharacter {
 
     public void mightyStrike(GameCharacter opponent) {
         int damage = 35;
-        if (getWeaken() > 0) {
-            damage /= 2;
-            setWeaken(getWeaken() - 1);
-            System.out.println(getName() + "'s attack was weakened!");
-        }
+        damage = calculateDamage(damage);
         System.out.println(getName() + " used Mighty Strike on " + opponent.getName());
         System.out.println(getName() + " caused " + damage + " damage.");
         opponent.setHealth(opponent.getHealth() - damage);

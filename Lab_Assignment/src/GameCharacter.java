@@ -69,14 +69,19 @@ public class GameCharacter {
         return health > 0;
     }
 
+    public int calculateDamage(int damage) {
+        if (weaken > 0) {
+            damage /= 2;
+            weaken--;
+            System.out.println(name + "'s attack was weakened!");
+        }
+        return damage;
+    }
+
     public void attack(GameCharacter opponent) {
         if (power >= standardAttackPowerCost) {
             int damage = standardAttackDamage;
-            if (weaken > 0) {
-                damage /= 2;
-                weaken--;
-                System.out.println(name + "'s attack was weakened!");
-            }
+            damage = calculateDamage(damage);
             System.out.println(name + " used attack on " + opponent.getName());
             System.out.println(name + " caused " + damage + " damage.");
             opponent.setHealth(opponent.getHealth() - damage);

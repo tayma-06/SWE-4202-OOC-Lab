@@ -16,11 +16,7 @@ public class Archer extends GameCharacter {
 
     public void quickShot(GameCharacter opponent) {
         int damage = 30;
-        if (getWeaken() > 0) {
-            damage /= 2;
-            setWeaken(getWeaken() - 2); // twice effect
-            System.out.println(getName() + "'s attack was weakened!");
-        }
+        damage = calculateDamage(damage);
         System.out.println(getName() + " used Quick Shot on " + opponent.getName());
         System.out.println(getName() + " caused " + damage + " damage.");
         opponent.setHealth(opponent.getHealth() - damage);
@@ -29,11 +25,7 @@ public class Archer extends GameCharacter {
 
     public void multiShot(GameCharacter opponent) {
         int damage = 60;
-        if (getWeaken() > 0) {
-            damage /= 2;
-            setWeaken(getWeaken() - 1);
-            System.out.println(getName() + "'s attack was weakened!");
-        }
+        damage = calculateDamage(damage);
         System.out.println(getName() + " used Multi Shot on " + opponent.getName());
         System.out.println(getName() + " caused " + damage + " damage.");
         opponent.setHealth(opponent.getHealth() - damage);
