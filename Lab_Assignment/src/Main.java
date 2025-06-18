@@ -125,7 +125,10 @@ public class Main {
                         enemy.special(player);
                         break;
                 }
+            } else {
+                System.out.println(enemy.getName() + " has already died and defeated do cannot attack.");
             }
+
             displayStats(player, enemy);
         }
         displayResult(player, enemy);
