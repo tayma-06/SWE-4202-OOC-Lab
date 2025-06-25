@@ -1,6 +1,6 @@
 # 🧑‍💻 Friends and Their Activities
 
-Raiyan, Tahsin, Anika, Salman are friends. They have the same age.  
+Rayan, Tahsin, Anika, Salman are friends. They have the same age.  
 They live in Dhaka. As a person, they can:
 
 - Eat  
@@ -12,8 +12,8 @@ They live in Dhaka. As a person, they can:
 
 ## 🎯 Individual Profiles
 
-### 👨‍💻 Raiyan
-Raiyan is a good programmer.  
+### 👨‍💻 Rayan
+Rayan is a good programmer.  
 He works for a company as a junior software engineer.  
 There, he performs his coding task.
 
