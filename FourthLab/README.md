@@ -24,11 +24,9 @@ You are a Java developer working for a hotel chain that manages room bookings, g
    - Instantiate objects of Reservation, OnlineReservation, and WalkInReservation.
    - Call all versions of the bookRoom() method to demonstrate method overloading and method overriding.
 
-## 1.3 Extended Task (Optional)
+## 1.3 Extended Task
 
 To further demonstrate OOP principles:
 
 - Convert Reservation into an abstract class and make bookRoom() abstract.
-- Create an interface named Reservable with a bookRoom() method and implement it in both OnlineReservation and WalkInReservation.
-- Add a cancelReservation() method to show overriding in cancellation behavior.
-- Create a Guest class to store guest details such as name, age, and reservation ID.
+- Create an interface and implement it.
