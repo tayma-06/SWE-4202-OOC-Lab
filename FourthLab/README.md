@@ -1,18 +1,34 @@
-## Getting Started
+# Hotel Reservation Management System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 1.1 Background
 
-## Folder Structure
+You are a Java developer working for a hotel chain that manages room bookings, guest check-ins, and reservation priorities. Your task is to build a simplified version of the Hotel Reservation Management System that showcases method overloading and method overriding through its booking process.
 
-The workspace contains two folders by default, where:
+## 1.2 Task Description
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. Create a base class named Reservation:
+   - Add a method named bookRoom() that prints "Booking a standard room."
+   - Overload the bookRoom() method with:
+     - bookRoom(String guestName)
+     - bookRoom(String guestName, boolean isVIP)
+   - Each overloaded version should print the guest name and indicate if the booking is prioritized for VIPs.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. Create a derived class named OnlineReservation that extends Reservation:
+   - Override bookRoom() to print "Booking room through online reservation system."
+   - Override bookRoom(String guestName) to print a message like "Booking for guest <guestName> via online system."
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+3. Create another derived class named WalkInReservation that extends Reservation:
+   - Override bookRoom() to print "Booking room via walk-in reservation."
 
-## Dependency Management
+4. Create a Main class to:
+   - Instantiate objects of Reservation, OnlineReservation, and WalkInReservation.
+   - Call all versions of the bookRoom() method to demonstrate method overloading and method overriding.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 1.3 Extended Task (Optional)
+
+To further demonstrate OOP principles:
+
+- Convert Reservation into an abstract class and make bookRoom() abstract.
+- Create an interface named Reservable with a bookRoom() method and implement it in both OnlineReservation and WalkInReservation.
+- Add a cancelReservation() method to show overriding in cancellation behavior.
+- Create a Guest class to store guest details such as name, age, and reservation ID.
