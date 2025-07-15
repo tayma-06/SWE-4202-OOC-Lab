@@ -1,12 +1,12 @@
-# 📚 User Management in a Library System
+# User Management in a Library System
 
-## 📖 Scenario
+## Scenario
 
 In a library management system, the User class represents individuals who interact with the library, such as members or patrons. This class encapsulates the user's personal information and provides functionalities related to their library activities.
 
 ---
 
-## 🧾 Attributes of the User Class
+## Attributes of the User Class
 
 1. **User ID**: A unique identifier for each user.  
 2. **Name**: The full name of the user.  
@@ -16,7 +16,7 @@ In a library management system, the User class represents individuals who intera
 
 ---
 
-## 🛠️ Functionalities of the User Class
+## Functionalities of the User Class
 
 1. **Register User**: Allows the creation of a new user account with the necessary details.  
 2. **Update Profile**: Enables the user to modify their personal information.  

@@ -1,4 +1,4 @@
-# 🧑‍💻 Friends and Their Activities
+# Friends and Their Activities
 
 Rayan, Tahsin, Anika, Salman are friends. They have the same age.  
 They live in Dhaka. As a person, they can:
@@ -10,24 +10,24 @@ They live in Dhaka. As a person, they can:
 
 ---
 
-## 🎯 Individual Profiles
+## Individual Profiles
 
-### 👨‍💻 Rayan
+### Rayan
 Rayan is a good programmer.  
 He works for a company as a junior software engineer.  
 There, he performs his coding task.
 
-### 💃 Tahsin
+### Tahsin
 Tahsin is a good dancer.  
 She dances in different festivals as a member of the **Elite Group** of **Choturongo Shilpokola Academy**.
 
-### 🎤 Anika
+### Anika
 Anika likes to sing and play guitar.  
 She is a member of the **Imaginary** band where she performs as the **lead vocalist**.
 
 ---
 
-## ✅ Instructions
+## Instructions
 
 - Use an appropriate name to define a class.  
 - Identify the properties and methods of each class and give a suitable name.  
