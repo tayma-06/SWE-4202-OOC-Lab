@@ -1,0 +1,18 @@
+Name: Alice, Feedback: Great Course
+Name: Bob, Feedback: Helpful
+Name: Charlie, Feedback: Examples
+Name: Diana, Feedback: Enjoyed
+Name: Ethan, Feedback: Loved
+
+Name: Alice, Feedback: Great course, learned a lot!
+Name: Bob, Feedback: The lab session were very helpful
+Name: Charlie, Feedback: Could use more examples in lectures
+Name: Diana, Feedback: Enjoyed the group projects
+Name: Ethan, Feedback: Would love more coding challenges
+
+Name: Alice, Feedback: Great
+Name: Bob, Feedback: Nice
+Name: Charlie, Feedback: Poor
+Name: Diana, Feedback: Enjoyed
+Name: Ethan, Feedback: Average
+
